@@ -1,0 +1,18 @@
+services:
+  # Frontend Service
+  - type: web
+    name: student-auth-frontend
+    env: node
+    rootDir: frontend
+    buildCommand: npm run build
+    publishDir: build
+    autoDeploy: true
+    
+  # Backend Service  
+  - type: web
+    name: student-auth-backend
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
