@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://student-auth-backend.onrender.com/api';
+const API_BASE_URL = 'https://your-backend-url.onrender.com/api';
 
 // Set up axios defaults
 const api = axios.create({
